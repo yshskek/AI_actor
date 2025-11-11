@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 동화책 작가 포트폴리오</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-50 text-slate-900">
+
+    <!-- Header & Nav (Sticky) -->
+    <header class="sticky top-0 z-50 w-full bg-white/90 shadow-md backdrop-blur-lg">
+        <nav class="container mx-auto max-w-5xl px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-brand-700">AI 동화책 작가</a>
+                <div class="flex items-center space-x-4">
+                    <a href="#skills" class="text-slate-600 hover:text-brand-600">기술 스택</a>
+                    <a href="#project" class="text-slate-600 hover:text-brand-600">프로젝트</a>
+                    <a href="#about" class="rounded-md bg-brand-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-brand-700">소개</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto max-w-5xl p-6 md:p-10">
+
+        <!-- 1. 기본 정보 (About Me & Contact) -->
+        <section id="about" class="my-16 scroll-mt-24">
+            <div class="flex flex-col items-center gap-10 md:flex-row">
+                <!-- Profile Image -->
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-48 rounded-full object-cover shadow-xl ring-4 ring-white md:h-60 md:w-60"
+                         src="https://placehold.co/300x300/e0f2fe/0369a1?text=Profile"
+                         onerror="this.src='https://placehold.co/300x300/e0f2fe/0369a1?text=Profile'; this.onerror=null;"
+                         alt="프로필 이미지">
+                </div>
+                
+                <!-- About Me Text -->
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-4xl font-bold text-brand-800 md:text-5xl">(예: 이작가)</h1>
+                    <p class="mt-3 text-2xl font-medium text-brand-600">(예: AI와 함께 세상에 하나뿐인 동화를 만드는 개발자)</p>
+                    
+                    <!-- Contact Links -->
+                    <div class="mt-6 flex justify-center gap-4 md:justify-start">
+                        <a href="mailto:email@example.com" class="flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-slate-700 shadow-md hover:bg-slate-50">
+                            <!-- Email Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="m3 6 9 6 9-6"></path></svg>
+                            이메일
+                        </a>
+                        <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-slate-700 shadow-md hover:bg-slate-50">
+                            <!-- GitHub Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1 0-1.3-.5-2.4-1.3-3.2.1-.3.5-1.5-.1-3.2 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1c-.6 1.7-.2 2.9-.1 3.2C4.5 7.1 4 8.2 4 9.6c0 4.7 2.7 5.8 5.5 6.1-.6.5-.5 1.2-.5 2V21"></path></svg>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-slate-700 shadow-md hover:bg-slate-50">
+                            <!-- LinkedIn Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 상세 소개 (About Me) -->
+            <div class="mt-16 rounded-xl bg-white p-8 shadow-lg md:p-10">
+                <h2 class="text-3xl font-bold text-brand-800">About Me</h2>
+                <div class="mt-6 space-y-4 text-lg leading-relaxed text-slate-700">
+                    <p>(예시 문단 1: 저는 기술이 아이들의 상상력을 자극하는 강력한 도구가 될 수 있다고 믿습니다. 특히 AI의 무한한 생성 능력과 인간의 따뜻한 창의력이 만날 때, 아이들에게 개인화된 긍정적 경험을 선물할 수 있습니다. 'AI 동화책 작가' 프로젝트는 '모든 아이가 자신만의 이야기 속 주인공이 될 자격이 있다'는 저의 믿음을 기술로 구현한 도전입니다.)</p>
+                    <p>(예시 문단 2: React와 TypeScript를 기반으로 인터랙티브한 웹 경험을 구축하는 데 강점이 있습니다. 이 프로젝트에서는 Gemini API를 활용하여 사용자가 입력한 키워드(주인공, 주제)로 동화 텍스트를 생성하고, Imagen API를 통해 이야기에 생명을 불어넣는 삽화까지 동적으로 생성하는 풀스택 AI 애플리케이션을 구현했습니다. 이 과정을 통해 '아이디어의 현실화'라는 개발의 가장 큰 매력을 느꼈습니다.)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 전체 기술 스택 (Skills) -->
+        <section id="skills" class="my-16 scroll-mt-24">
+            <h2 class="text-center text-3xl font-bold text-brand-800 md:text-4xl">전체 기술 스택 (Skills)</h2>
+            <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- 프론트엔드 -->
+                <div class="rounded-xl bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold text-brand-700">프론트엔드</h3>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-800">React</span>
+                        <span class="rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-800">TypeScript</span>
+                        <span class="rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-800">Next.js</span>
+                        <span class="rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-800">Tailwind CSS</span>
+                        <span class="rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-800">Zustand</span>
+                    </div>
+                </div>
+                <!-- 백엔드 (AI 연동) -->
+                <div class="rounded-xl bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold text-brand-700">백엔드 (AI 연동)</h3>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800">Node.js</span>
+                        <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800">Firebase Functions</span>
+                        <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800">Gemini API</span>
+                        <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800">Imagen API</span>
+                    </div>
+                </div>
+                <!-- DevOps & Tools -->
+                <div class="rounded-xl bg-white p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold text-brand-700">DevOps & Tools</h3>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">Git</span>
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">Vercel</span>
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">Figma</span>
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">Postman</span>
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">Firestore</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 프로젝트 상세 -->
+        <section id="project" class="my-16 scroll-mt-24">
+            <div class="rounded-2xl bg-white p-8 shadow-xl md:p-12">
+                <h2 class="text-center text-3xl font-bold text-brand-800 md:text-4xl">프로젝트: AI 동화책 작가</h2>
+                <p class="mt-2 text-center text-xl text-slate-500">(부제: 나만의 이야기 생성기)</p>
+
+                <!-- 메인 프로젝트 이미지 -->
+                <img class="mt-10 w-full rounded-lg object-cover shadow-lg"
+                     src="https://placehold.co/1200x600/e0f2fe/0369a1?text=AI+Fairy+Tale+Project+Main"
+                     onerror="this.src='https://placehold.co/1200x600/e0f2fe/0369a1?text=AI+Fairy+Tale+Project+Main'; this.onerror=null;"
+                     alt="프로젝트 메인 이미지">
+                
+                <!-- 문제 정의 -->
+                <div class="mt-12">
+                    <h3 class="mb-4 text-2xl font-semibold text-brand-700">[문제 정의]</h3>
+                    <p class="text-lg leading-relaxed text-slate-700">(예시: 기존의 동화책은 이미 정해진 이야기이며, 아이들은 수동적인 독자에 머무릅니다. 부모들은 아이에게 교훈적이면서도 새로운 이야기를 들려주고 싶어 하지만 매번 창작하는 것은 어렵습니다.
+                    핵심 목표는, 아이가 직접 주인공의 이름, 이야기의 주제(예: 용기, 우정), 장소 등 간단한 키워드만 입력하면, AI가 즉석에서 아이의 눈높이에 맞는 고유한 삽화가 포함된 동화책을 생성해 주는 웹 애플리케이션을 개발하는 것이었습니다.)</p>
+                </div>
+
+                <!-- 아키텍처/설계 -->
+                <div class="mt-10">
+                    <h3 class="mb-4 text-2xl font-semibold text-brand-700">[아키텍처/설계]</h3>
+                    <p class="mb-6 text-lg leading-relaxed text-slate-700">(예시: Next.js의 App Router를 기반으로 사용자 경험이 빠른 웹 UI를 구축했습니다. 사용자가 키워드를 입력하고 '이야기 만들기'를 요청하면, Firebase Functions를 통해 API 키를 안전하게 숨긴 채 Gemini API를 호출합니다.
+                    먼저, 정교하게 설계된 프롬프트를 통해 동화 텍스트를 생성(1차 호출)합니다. 생성된 텍스트에서 핵심 장면을 요약한 프롬프트를 다시 구성하여 Imagen API를 호출(2차 호출), 장면에 맞는 삽화를 생성합니다. 생성된 모든 텍스트와 이미지 URL은 Firestore에 사용자 ID와 함께 저장되어 '나만의 책장' 기능을 구현했습니다.)</p>
+                    <img class="w-full rounded-lg object-cover shadow-lg"
+                         src="https://placehold.co/800x400/e0f2fe/0369a1?text=AI+Storybook+Architecture"
+                         onerror="this.src='https://placehold.co/800x400/e0f2fe/0369a1?text=Architecture+Diagram'; this.onerror=null;"
+                         alt="아키텍처 다이어그램">
+                </div>
+
+                <!-- 핵심 기능 1 -->
+                <div class="mt-10">
+                    <h3 class="mb-4 text-2xl font-semibold text-brand-700">[핵심 기능 1: AI 기반 맞춤형 동화 텍스트 생성]</h3>
+                    <p class="mb-6 text-lg leading-relaxed text-slate-700">(예시: 사용자가 주인공 이름, 원하는 교훈(주제), 이야기의 배경을 입력하면, 이를 변수로 하는 시스템 프롬프트를 구성합니다. "당신은 5~7세 아이들을 위한 다정한 동화 작가입니다..."로 시작하는 이 프롬프트는 Gemini API(`gemini-2.5-flash-preview-09-2025`)에 전달되어, 입력된 키워드가 자연스럽게 녹아든 5~7문단 길이의 따뜻하고 교훈적인 동화 텍스트(한국어)를 생성하도록 설계했습니다. 폭력성이나 부정적인 콘텐츠를 배제하는 가드레일을 프롬프트에 포함했습니다.)</p>
+                    <img class="w-full rounded-lg object-cover shadow-lg"
+                         src="https://placehold.co/800x400/e0f2fe/0369a1?text=Story+Input+Form+UI"
+                         onerror="this.src='https://placehold.co/800x400/e0f2fe/0369a1?text=Story+Input+Form+UI'; this.onerror=null;"
+                         alt="핵심 기능 1 스크린샷">
+                </div>
+
+                <!-- 핵심 기능 2 -->
+                <div class="mt-10">
+                    <h3 class="mb-4 text-2xl font-semibold text-brand-700">[핵심 기능 2: AI를 통한 동화 삽화 자동 생성]</h3>
+                    <p class="mb-6 text-lg leading-relaxed text-slate-700">(예시: 텍스트가 성공적으로 생성되면, 각 문단(혹은 핵심 장면)을 요약하는 키워드를 추출합니다. 이 키워드에 "A simple and colorful children's book illustration style, watercolor, friendly..."와 같은 스타일 프롬프트를 조합하여 Imagen API(`imagen-4.0-generate-001`)에 요청합니다. API는 1024x1024 크기의 삽화를 반환하며, 이 이미지는 텍스트와 함께 화면에 배치되어 아이가 즉시 '그림책'을 읽는 경험을 할 수 있도록 구현했습니다.)</p>
+                    <img class="w-full rounded-lg object-cover shadow-lg"
+                         src="https://placehold.co/800x400/e0f2fe/0369a1?text=Generated+Story+with+Images"
+                         onerror="this.src='https://placehold.co/800x400/e0f2fe/0369a1?text=Generated+Story+with+Images'; this.onerror=null;"
+                         alt="핵심 기능 2 스크린샷">
+                </div>
+
+                <!-- 역할, 성과, 회고 -->
+                <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <!-- 나의 역할 및 기여 -->
+                    <div>
+                        <h3 class="mb-4 text-2xl font-semibold text-brand-700">[나의 역할 및 기여]</h3>
+                        <ul class="list-disc list-outside ml-6 space-y-2 text-lg text-slate-700">
+                            <li>(예: Gemini(텍스트) 및 Imagen(이미지) API 연동을 위한 프롬프트 엔지니어링 및 R&D)</li>
+                            <li>(예: React/Next.js 기반의 사용자 스토리 입력 폼 및 생성된 동화 뷰어 UI/UX 개발)</li>
+                            <li>(예: Firebase Authentication 및 Firestore를 활용한 '나만의 책장' 스키마 설계 및 CRUD 구현)</li>
+                            <li>(예: Firebase Functions를 이용한 AI API 호출 서버리스 백엔드 로직 설계 및 구현)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 결과 및 성과 -->
+                    <div>
+                        <h3 class="mb-4 text-2xl font-semibold text-brand-700">[결과 및 성과]</h3>
+                        <ul class="list-disc list-outside ml-6 space-y-2 text-lg text-slate-700">
+                            <li>(예: 사용자가 키워드 입력 후 평균 1분 이내에 삽화가 포함된 고유한 디지털 동화책 1권을 완성하는 프로토타입 구현)</li>
+                            <li>(예: 초기 지인 테스트에서 '아이가 자기 이름이 나오자 크게 몰입하며 좋아했다'는 긍정적인 정성적 피드백 확보)</li>
+                            <li>(예: 텍스트-이미지 생성형 AI 파이프라인을 웹 서비스로 구현해 본 전체 개발 사이클 경험)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 회고 (배운 점) -->
+                <div class="mt-10">
+                    <h3 class="mb-4 text-2xl font-semibold text-brand-700">[회고 (배운 점)]</h3>
+                    <p class="text-lg leading-relaxed text-slate-700">(예시: AI 모델이 일관된 동화 문체와 긍정적인 서사를 유지하도록 유도하는 프롬프트 설계(Prompt Engineering)가 서비스 품질에 얼마나 결정적인지 깨달았습니다. 특히, 텍스트 생성 결과물에서 이미지 생성을 위한 핵심 키워드를 자동으로 추출하여 다음 AI 모델의 입력으로 넘기는 파이프라인을 구축하며 AI 모델 간의 상호작용을 깊이 이해할 수 있었습니다.)</p>
+                </div>
+
+                <!-- 회고 (개선점) -->
+                <div class="mt-10">
+                    <h3 class="mb-4 text-2xl font-semibold text-brand-700">[회고 (개선점)]</h3>
+                    <p class="text-lg leading-relaxed text-slate-700">(예시: 현재는 단편 이야기 생성에 그치지만, 향후 사용자의 선택에 따라 이야기가 분기되는 '인터랙티브 스토리' 기능을 추가하고 싶습니다. 또한, 생성된 이야기의 안전성(Safety) 검증 로직을 고도화하고, TTS(Text-to-Speech) API를 연동하여 '읽어주기' 오디오북 기능을 제공하여 사용자 경험을 완성도를 높이고 싶습니다.)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 border-t border-brand-200 bg-white">
+        <div class="container mx-auto max-w-5xl px-6 py-8 text-center text-slate-500">
+            <p>© 2025 (예: 이작가). All rights reserved.</p>
+            <p class="mt-2 text-sm">이 포트폴리오는 Tailwind CSS를 사용하여 제작되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
